@@ -421,6 +421,10 @@ template {
   background-color: #EC1F46;
 }
 
+.search__button:hover {
+  cursor: pointer;
+}
+
 .search__img {
   margin-top: 3px;
 }
