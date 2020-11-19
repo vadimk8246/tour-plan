@@ -5,6 +5,10 @@
     align-items: center
     justify-content: space-between
     padding: 40px 0px
+  .logo
+    width: 177px
+    &__image
+      width: 100%
   &__search
     margin-right: auto
     margin-left: 108px
@@ -48,3 +52,19 @@
     object-fit: cover
   &__name
     margin-left: 15px
+.nav-wrapper
+  background-color: $dark-color
+  nav
+    .navbar-menu
+      list-style: none
+      display: flex
+      padding: 30px 0px
+      align-items: center
+      justify-content: space-between
+      text-transform: uppercase
+      font-weight: 600
+      line-height: 18px
+      font-size: 14px
+      &__link
+        color: $white-color
+        text-decoration: none

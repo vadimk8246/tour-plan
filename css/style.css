@@ -372,6 +372,14 @@ template {
   padding: 40px 0px;
 }
 
+.navbar .logo {
+  width: 177px;
+}
+
+.navbar .logo__image {
+  width: 100%;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
@@ -450,5 +458,70 @@ template {
 
 .user__name {
   margin-left: 15px;
+}
+
+.nav-wrapper {
+  background-color: #0A223D;
+}
+
+.nav-wrapper nav .navbar-menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.nav-wrapper nav .navbar-menu__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .container {
+    max-width: 700px;
+  }
+  .navbar-top {
+    padding: 30px 0px;
+  }
+  .navbar-top .logo {
+    width: 132px;
+  }
+  .navbar-top .search__input {
+    width: 340px;
+  }
+  .navbar-top .search__search {
+    margin-left: auto;
+  }
+  .navbar nav .navbar-menu {
+    padding: 22px 0px;
+  }
+  .navbar nav .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
