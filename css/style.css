@@ -12,6 +12,10 @@ body {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -372,12 +376,12 @@ template {
   padding: 40px 0px;
 }
 
-.navbar .logo {
-  width: 177px;
+.navbar-top__menu-button {
+  display: none;
 }
 
-.navbar .logo__image {
-  width: 100%;
+.navbar .logo {
+  width: 177px;
 }
 
 .navbar__search {
@@ -494,6 +498,9 @@ template {
 }
 
 @media (max-width: 992px) {
+  .navbar__search {
+    margin-left: auto;
+  }
   .navbar .container {
     max-width: 700px;
   }
@@ -505,9 +512,6 @@ template {
   }
   .navbar-top .search__input {
     width: 340px;
-  }
-  .navbar-top .search__search {
-    margin-left: auto;
   }
   .navbar nav .navbar-menu {
     padding: 22px 0px;
@@ -522,6 +526,39 @@ template {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .navbar-top .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+    margin-bottom: 4px;
+    padding: 0px;
+  }
+  .navbar-top__menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    background-color: #ffffff;
+  }
+  .navbar-top__menu-button:hover {
+    cursor: pointer;
+  }
+  .navbar nav, .navbar .search, .navbar .profile {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
