@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <title>lesson-19</title>
+    <title>lesson-20</title>
   </head>
   <body>
     <header class="navbar">
@@ -117,7 +118,57 @@
             <span class="rating__counter">4.5/5</span>
           </div>
         </div>
+        <div class="hotel-grid">
+          <div class="slider">
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    src="img/slide-1.jpg"
+                    alt="slide 1"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slide-2.jpg"
+                    alt="slide 2"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slide-3.jpg"
+                    alt="slide 3"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slide-4.jpg"
+                    alt="slide 4"
+                    class="swiper-slide__img"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/slide-5.jpg"
+                    alt="slide 5"
+                    class="swiper-slide__img"
+                  />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
