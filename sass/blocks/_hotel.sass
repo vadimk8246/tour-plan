@@ -20,6 +20,9 @@
     align-items: center
     justify-content: space-between
     padding-bottom: 20px
+  &-grid
+    display: flex
+    justify-content: space-between
     &__description
       margin-top: 0px
       margin-bottom: 0px
@@ -29,6 +32,7 @@
     &__offer
       margin-left: 14px
       margin-top: 4px
+
 .offer
   font-size: 10px
   line-height: 13px
@@ -91,3 +95,79 @@
     left: 0
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
     z-index: 10
+.section__info
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.booking
+  font-family: 'Nunito', sans-serif
+  padding: 27px
+  background-color: $dark-color
+  display: flex
+  flex-direction: column
+  color: $white-color
+  border-radius: 8px
+  min-height: 210px
+  width: 350px
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 6px
+  .price
+    display: flex
+    flex-direction: column
+    &__price
+      font-weight: 800
+      font-size: 24px
+      line-height: 33px
+    &__start
+      font-weight: normal
+      font-size: 10px
+      line-height: 14px
+    &__text
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+  .person-room
+    margin-top: 4px
+    &__info
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+    &__text
+      text-align: right
+      display: flex
+      justify-content: space-between
+      width: 80px
+      margin-bottom: 8px
+.call-center
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-weight: 600
+  font-size: 18px
+  line-height: 25px
+  margin-bottom: 14px
+  &__image
+    vertical-align: -12px
+  &__link
+    text-decoration: none
+    color: inherit
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 75px
+.booking-button
+  font-weight: 600
+  font-size: 14px
+  line-height: 19px
+  widows: 100%
+  border: none
+  background-color: $primary-color
+  color: $white-color
+  border-radius: 4px
+  padding: 15px 0px
+  cursor: pointer
+.map
+  border-radius: 10px
+  overflow: hidden
