@@ -568,6 +568,10 @@ template {
   padding-bottom: 20px;
 }
 
+.hotel-info__offer {
+  margin-left: 14px;
+}
+
 .hotel-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -832,6 +836,9 @@ template {
   .slider {
     width: 590px;
   }
+  #map {
+    width: 350px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -880,7 +887,7 @@ template {
   .booking {
     width: 375px;
   }
-  .map {
+  #map {
     width: 375px;
   }
 }
@@ -957,7 +964,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .section__info .map {
+  .section__info #map {
     width: 100%;
   }
   .section__info .booking {
