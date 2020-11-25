@@ -570,6 +570,16 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
+  margin-top: 3px;
+}
+
+.hotel-info__name {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.hotel-info__description {
+  margin-top: 0px;
 }
 
 .hotel-grid {
@@ -613,6 +623,10 @@ template {
   color: #ffffff;
   background-color: #EC1F46;
   border-radius: 4px;
+}
+
+.rating__total {
+  font-size: 11px;
 }
 
 .rating__text {
@@ -684,7 +698,7 @@ template {
   z-index: 10;
 }
 
-.section__info {
+.price-and-map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -878,7 +892,7 @@ template {
   .hotel__slider {
     margin-bottom: 30px;
   }
-  .section__info {
+  .price-and-map {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -958,19 +972,19 @@ template {
   .slider {
     height: 350px;
   }
-  .section__info {
+  .price-and-map {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .section__info #map {
+  .price-and-map #map {
     width: 100%;
   }
-  .section__info .booking {
+  .price-and-map .booking {
     width: 100%;
   }
-  .section__info .booking__information {
+  .price-and-map .booking__information {
     margin-bottom: 30px;
   }
 }
