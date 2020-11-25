@@ -602,6 +602,10 @@ template {
   border-radius: 4px;
 }
 
+.rating__total {
+  font-size: 11px;
+}
+
 .rating__text {
   font-size: 8px;
   line-height: 10px;
