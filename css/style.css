@@ -818,9 +818,11 @@ template {
   cursor: pointer;
 }
 
-.map {
+#map {
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
+  height: 216px;
 }
 
 @media (max-width: 1200px) {
