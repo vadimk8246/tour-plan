@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -843,6 +844,124 @@ template {
   height: 216px;
 }
 
+.newsletter {
+  position: relative;
+  padding: 97px 0px 87px 0px;
+  background-image: url(../img/newsletter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.newsletter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+  z-index: 5;
+}
+
+.newsletter-wrapper {
+  z-index: 10;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 731px;
+}
+
+.newsletter-tittle {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter-tittle__strong {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.subscribe {
+  position: relative;
+  width: 350px;
+  height: 55px;
+}
+
+.subscribe__input {
+  padding: 18px 75px 19px 33px;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #ffffff;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.subscribe__input::placeholder {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.subscribe__button {
+  position: absolute;
+  background-color: #EC1F46;
+  right: 0;
+  top: 0;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  min-width: 65px;
+  height: 100%;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -856,8 +975,8 @@ template {
 }
 
 @media (max-width: 992px) {
-  .container {
-    max-width: 780px;
+  .container, .newsletter-wrapper {
+    max-width: 700px;
   }
   .navbar__search {
     margin-left: 60px;
@@ -878,7 +997,10 @@ template {
     font-size: 12px;
     line-height: 15px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10pч;
+  }
+  .hotel {
+    padding-bottom: 60px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -899,10 +1021,10 @@ template {
             flex-direction: row;
   }
   .booking {
-    width: 375px;
+    width: 340px;
   }
   #map {
-    width: 375px;
+    width: 340px;
   }
 }
 
@@ -944,6 +1066,7 @@ template {
   }
   .hotel {
     padding-top: 5px;
+    padding-bottom: 50px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -985,7 +1108,18 @@ template {
     width: 100%;
   }
   .price-and-map .booking__information {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  .newsletter-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 576px;
+    width: 92%;
   }
 }
 
@@ -996,14 +1130,41 @@ template {
   .slider {
     height: 210px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .newsletter {
+    padding: 71px 0px 81px 0px;
+  }
+  .newsletter-tittle {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-tittle__strong {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 27px;
+  }
+  __input {
+    padding: 18px 75px 19px 33px;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
   }
 }
 
 @media (max-width: 460px) {
   .slider {
     height: 179px;
+  }
+  .subscribe {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
