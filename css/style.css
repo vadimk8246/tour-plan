@@ -527,6 +527,10 @@ template {
   padding: 23px 0px 70px 0px;
 }
 
+.hotel__slider {
+  margin: 0px;
+}
+
 .hotel-slider {
   width: 728px;
   height: 450px;
@@ -968,8 +972,8 @@ template {
 
 .reviews__title {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 36px;
+  line-height: 45px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
@@ -1256,7 +1260,7 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .reviews-title {
+  .reviews__title {
     font-size: 30px;
     line-height: 38px;
   }
