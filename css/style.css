@@ -1162,6 +1162,10 @@ template {
   #map {
     width: 340px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
@@ -1259,10 +1263,6 @@ template {
             align-items: flex-start;
     max-width: 576px;
     width: 92%;
-  }
-  .reviews__title {
-    font-size: 30px;
-    line-height: 38px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
