@@ -851,10 +851,6 @@ template {
 .newsletter {
   position: relative;
   padding: 97px 0px 87px 0px;
-  background-image: url(../img/newsletter.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .newsletter::before {
