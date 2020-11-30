@@ -1392,6 +1392,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -1399,6 +1400,51 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-bottom__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 283px;
+  -ms-flex-preferred-size: 62%;
+      flex-basis: 62%;
+}
+
+.footer-bottom__text {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0px 10px;
+}
+
+.footer-bottom__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-preferred-size: 38%;
+      flex-basis: 38%;
+}
+
+.footer__bottom--margin {
+  margin-top: 95px;
 }
 
 @media (max-width: 1200px) {
