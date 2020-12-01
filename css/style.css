@@ -1217,6 +1217,10 @@ template {
   grid-row: 1 / 4;
 }
 
+.footer__legal {
+  margin-left: 70px;
+}
+
 .footer__social-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1467,6 +1471,9 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .footer__legal {
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1596,6 +1603,9 @@ template {
   }
   .activities__card {
     margin-bottom: 20px;
+  }
+  .footer__legal {
+    margin-left: 0px;
   }
 }
 
