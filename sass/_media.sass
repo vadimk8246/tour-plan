@@ -100,10 +100,36 @@
     &__legal
       margin-left: 0px
 @media ( max-width:  768px)
+  body
+    padding-top: 80px
   .container
     max-width: 576px
     width: 92%
   .navbar
+    &-menu
+      .user
+        flex-direction: column
+        justify-content: center
+        margin-top: 30px
+        &__name
+          margin: 10px 0px 15px 0px
+          color: $white-color
+          text-transform: none
+      .navbar__search
+        margin-left: 0px
+        margin-bottom: 20px
+    &__mobile_fixed
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 100
+    &__search,&__profile
+      &__mobile
+        &__hidden
+          display: none
+        &__visible
+          display: flex
     &-top
       .menu-button
         &__line
@@ -120,8 +146,22 @@
         background-color: $white-color
         &:hover
           cursor: pointer
-    nav,.search,.profile
-      display: none
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &__mobile
+          &__visible
+            display: block
+  .nav-wrapper
+    display: none
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    top: 80px
+    &__visible
+      display: block
   .stars
     flex-basis: 48px
   .hotel
@@ -275,8 +315,11 @@
       grid-column: 1
       display: flex
       justify-content: flex-start
-    &--padding
+    &__padding
       padding-left: 0px
+  .search
+    &__input
+      width: 245px
 @media (max-width: 460px)
   .hotel__slider
     height: 179px

@@ -364,6 +364,10 @@ template {
   background-color: white;
 }
 
+.navbar-menu__item__mobile__visible {
+  display: none;
+}
+
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1610,9 +1614,46 @@ template {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .navbar-menu .user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .navbar-menu .user__name {
+    margin: 10px 0px 15px 0px;
+    color: #ffffff;
+    text-transform: none;
+  }
+  .navbar-menu .navbar__search {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .navbar__mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+  .navbar__search__mobile__hidden, .navbar__profile__mobile__hidden {
+    display: none;
+  }
+  .navbar__search__mobile__visible, .navbar__profile__mobile__visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navbar-top .menu-button__line {
     width: 16px;
@@ -1638,8 +1679,28 @@ template {
   .navbar-top__menu-button:hover {
     cursor: pointer;
   }
-  .navbar nav, .navbar .search, .navbar .profile {
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item__mobile__visible {
+    display: block;
+  }
+  .nav-wrapper {
     display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 80px;
+  }
+  .nav-wrapper__visible {
+    display: block;
   }
   .stars {
     -ms-flex-preferred-size: 48px;
@@ -1897,8 +1958,11 @@ template {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .footer-bottom--padding {
+  .footer-bottom__padding {
     padding-left: 0px;
+  }
+  .search__input {
+    width: 245px;
   }
 }
 

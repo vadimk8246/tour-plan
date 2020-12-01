@@ -15,7 +15,7 @@
     <title>lesson-25</title>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -25,7 +25,10 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search__mobile__hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -39,7 +42,7 @@
               />
             </button>
           </form>
-          <div class="profile">
+          <div class="profile navbar__profile__mobile__hidden">
             <a href="" class="user">
               <img
                 src="img/avatar.jpg"
@@ -60,6 +63,37 @@
         <div class="container">
           <nav>
             <ul class="navbar-menu">
+              <li class="navbar-menu__item navbar-menu__item__mobile__visible">
+                <div class="profile navbar__profile__mobile__visible">
+                  <a href="" class="user">
+                    <img
+                      src="img/avatar.jpg"
+                      alt="avatar Nathan"
+                      class="user__avatar"
+                    />
+                    <span class="user__name">Nathan</span>
+                  </a>
+                </div>
+              </li>
+              <li class="navbar-menu__item navbar-menu__item__mobile__visible">
+                <form
+                  action="#"
+                  class="search navbar__search navbar__search__mobile__visible"
+                >
+                  <input
+                    type="text"
+                    class="search__input"
+                    placeholder="Search Location"
+                  />
+                  <button class="search__button">
+                    <img
+                      src="img/search-img.svg"
+                      alt="search:img"
+                      class="search__img"
+                    />
+                  </button>
+                </form>
+              </li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">All Deals</a>
               </li>
@@ -570,7 +604,7 @@
         </div>
         <div class="footer-bottom footer__bottom-margin">
           <div class="footer-bottom__wrapper">
-            <span class="footer-bottom__text footer-bottom--padding">
+            <span class="footer-bottom__text footer-bottom__padding">
               <a href="#" class="footer__link">Disclaimer</a>
             </span>
             <span class="footer-bottom__text">
