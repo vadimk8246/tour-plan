@@ -497,36 +497,6 @@ template {
   text-decoration: none;
 }
 
-.breadcrumb {
-  padding: 18px 0;
-}
-
-.breadcrumb-list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  color: #333333;
-}
-
-.breadcrumb-list__item {
-  font-size: 10px;
-  line-height: 13px;
-}
-
-.breadcrumb-list__item .breadcrumb-list__link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.breadcrumb-list__item:not(:last-child)::after {
-  content: '/';
-  margin-right: 4px;
-}
-
 .hotel {
   padding: 23px 0px 70px 0px;
 }
@@ -850,6 +820,40 @@ template {
   overflow: hidden;
   width: 100%;
   height: 216px;
+}
+
+.map-frame {
+  width: 100%;
+}
+
+.breadcrumb {
+  padding: 18px 0;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__item .breadcrumb-list__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
 }
 
 .newsletter {
