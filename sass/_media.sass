@@ -13,6 +13,17 @@
       flex-basis: 100%
     &__legal
       margin-left: 20px
+  .other
+    &-wrapper
+      grid-gap: 15px
+    &__info-wrapper
+      margin-bottom: 15px
+    .price
+      flex-basis: 50%
+    .card
+      &__info
+        margin-bottom: 15px
+
 @media ( max-width:  992px)
   .container,.newsletter-wrapper
     max-width: 700px
@@ -99,6 +110,18 @@
   .footer
     &__legal
       margin-left: 0px
+  .other
+    padding-top: 30px
+    padding-bottom: 60px
+    &-wrapper
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, 1fr)
+      grid-gap: 25px
+    &-title
+      font-weight: 700
+      font-size: 30px
+      line-height: 38px
 @media ( max-width:  768px)
   body
     padding-top: 80px
@@ -160,6 +183,7 @@
     right: 0
     bottom: 0
     top: 80px
+    overflow: scroll
     &__visible
       display: block
   .stars
@@ -227,6 +251,43 @@
   .footer-bottom
     &__img
       grid-column: span 2
+  .other
+    padding-top: 20px
+    padding-bottom: 40px
+    &-card-main
+      flex-direction: column
+    &__block-img
+      width: 100%
+      height: 250px
+    &__info
+      width: 100%
+      padding: 30px 21px 25px 32px
+    &__title
+      margin-bottom: 15px
+      font-size: 22px
+    &__rating-main
+      display: none
+    &__description
+      display: none
+    &__offer
+      padding: 4px 9px 4px 9px
+      border-radius: 0px 4px 4px 0px
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+    &__img-main
+      object-fit: cover
+      object-position: center 20%
+    .price
+      flex-basis: 74%
+    &-wrapper
+      grid-template-rows: repeat(5, 1fr)
+      grid-gap: 20px
+    .card
+      grid-column: 1/3
+      &__title
+        margin-bottom: 15px
+        font-size: 22px
 @media ( max-width:  576px)
   .logo
     width: 99px
@@ -320,8 +381,34 @@
   .search
     &__input
       width: 245px
+  .other
+    padding-top: 20px
+    &-title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 40px
+    &__info
+      padding: 13px 21px 13px 32px
+      &-wrapper
+        margin-bottom: 10px
+    .price
+      flex-basis: 100%
+      margin-bottom: 5px
+    .card
+      &__information
+        padding: 13px 21px 13px 32px
+      &__info
+        margin-bottom: 10px
 @media (max-width: 460px)
   .hotel__slider
     height: 179px
   .subscribe
     width: 100%
+  .other
+    &__icon
+      margin-right: 10px
+    &__info
+      padding-left: 20px
+    .card
+      &__information
+        padding-left: 20px
