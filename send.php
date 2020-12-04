@@ -8,7 +8,9 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-
+$email = $_POST['email'];
+$chet = strlen($email);
+$func = header('Location: thankyou.html');
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
@@ -38,6 +40,13 @@ try {
     // Получатель письма
     $mail->addAddress('8246vadim8246@mail.ru');  
 
+
+if ($chet > 0) {
+    $body = "<h2>Новая подписка на новости</h2>
+                 <b>email:</b> $email<br>";
+    $func = header('Location: subscribe.html');
+    
+}
 // Отправка сообщения
 $mail->isHTML(true);
 $mail->Subject = $title;
@@ -53,5 +62,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
-
+$func;

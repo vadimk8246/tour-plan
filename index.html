@@ -12,7 +12,7 @@
     />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>lesson-27</title>
+    <title>lesson-27.1</title>
   </head>
   <body>
     <header class="navbar navbar__mobile_fixed">
@@ -499,13 +499,18 @@
           subscribe to our
           <span class="newsletter-tittle__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
-          <button class="subscribe__button">Send</button>
+          <button class="subscribe__button" type="submit">Send</button>
         </form>
       </div>
     </section>
