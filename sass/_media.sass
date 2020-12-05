@@ -122,6 +122,10 @@
       font-weight: 700
       font-size: 30px
       line-height: 38px
+  .modal
+    &__dialog
+      min-width: 478px
+
 @media ( max-width:  768px)
   body
     padding-top: 80px
@@ -285,6 +289,10 @@
       &__title
         margin-bottom: 15px
         font-size: 22px
+  .modal__dialog
+    max-width: 576px
+    width: 80%
+    padding: 25px 60px
 @media ( max-width:  576px)
   .logo
     width: 99px
@@ -393,6 +401,16 @@
         padding: 13px 21px 13px 32px
       &__info
         margin-bottom: 10px
+  .modal__dialog
+    max-width: 82%
+    min-width: auto
+@media (max-width:480px)
+  .modal__info
+    order: -1
+    margin-bottom: 10px
+  .modal__button
+    order: 1
+    flex-basis: 100%
 @media (max-width: 460px)
   .hotel__slider
     height: 179px
@@ -406,3 +424,8 @@
     .card
       &__information
         padding-left: 20px
+  .modal
+    &__dialog
+      padding: 20px 30px
+    &__message
+      max-height: 120px

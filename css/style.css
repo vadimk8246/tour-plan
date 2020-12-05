@@ -17,6 +17,34 @@ img {
   max-width: 100%;
 }
 
+.input {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 0px 23px;
+  height: 50px;
+}
+
+.message {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1567,10 +1595,6 @@ template {
   color: inherit;
 }
 
-.footer__message {
-  resize: none;
-}
-
 .footer__img-block {
   min-width: 22px;
   display: -webkit-box;
@@ -1640,6 +1664,7 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
+  resize: none;
 }
 
 .footer__button {
@@ -1708,6 +1733,102 @@ template {
 
 .footer__bottom-margin {
   margin-top: 95px;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 33px 88px;
+  background-color: #0A223D;
+  border-radius: 8px;
+  color: #ffffff;
+  z-index: 1001;
+  max-width: 478px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__message {
+  width: 100%;
+  min-width: 123px;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+.modal__info {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1200px) {
@@ -1893,6 +2014,9 @@ template {
     font-weight: 700;
     font-size: 30px;
     line-height: 38px;
+  }
+  .modal__dialog {
+    min-width: 478px;
   }
 }
 
@@ -2141,6 +2265,11 @@ template {
     margin-bottom: 15px;
     font-size: 22px;
   }
+  .modal__dialog {
+    max-width: 576px;
+    width: 80%;
+    padding: 25px 60px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2321,6 +2450,26 @@ template {
   .other .card__info {
     margin-bottom: 10px;
   }
+  .modal__dialog {
+    max-width: 82%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal__info {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 10px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (max-width: 460px) {
@@ -2338,6 +2487,12 @@ template {
   }
   .other .card__information {
     padding-left: 20px;
+  }
+  .modal__dialog {
+    padding: 20px 30px;
+  }
+  .modal__message {
+    max-height: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */
