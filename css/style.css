@@ -2017,6 +2017,8 @@ template {
   }
   .modal__dialog {
     min-width: 478px;
+    max-height: 100%;
+    overflow: scroll;
   }
 }
 
