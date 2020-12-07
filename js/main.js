@@ -57,4 +57,27 @@ $(document).ready(function () {
     }
   }
   document.onkeydown = closeEscape
+
+
+  // Обработка форма
+  $(".form").each(function () {
+    $(this).validate({
+    errorClass:"invalid",
+    messages: {
+      name: {
+        required:"Please specify your name",
+      },
+      modemail: {
+        required: "We need your email address to contact you",
+        modemail: "Your email address must be in the format of mail@domain.com",
+      },
+      search:{
+        required:""
+      }
+    },
+  });
+  })
+
+
+  $('.input__phone').mask('+7 (000) 000-0000')
 });
