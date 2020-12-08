@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@300;400;600;800&display=swap"
@@ -12,13 +13,18 @@
     />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>lesson-29</title>
+    <title>lesson-30</title>
   </head>
   <body>
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a
+            href="index.html"
+            class="logo"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <img
               src="img/logo.svg"
               alt="logo Best Tour Plan"
@@ -28,6 +34,8 @@
           <form
             action="#"
             class="search navbar__search navbar__search__mobile__hidden form"
+            data-aos="fade-right"
+            data-aos-delay="200"
           >
             <input
               type="search"
@@ -44,7 +52,11 @@
               />
             </button>
           </form>
-          <div class="profile navbar__profile__mobile__hidden">
+          <div
+            class="profile navbar__profile__mobile__hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <a href="" class="user">
               <img
                 src="img/avatar.jpg"
@@ -64,7 +76,7 @@
       <div class="nav-wrapper">
         <div class="container">
           <nav>
-            <ul class="navbar-menu">
+            <ul class="navbar-menu" data-aos="fade-right" data-aos-delay="400">
               <li class="navbar-menu__item navbar-menu__item__mobile__visible">
                 <div class="profile navbar__profile__mobile__visible">
                   <a href="" class="user">
@@ -125,7 +137,7 @@
     </header>
     <section class="hotel">
       <div class="container">
-        <div class="breadcrumb">
+        <div class="breadcrumb" data-aos="fade-right" data-aos-delay="500">
           <ul class="breadcrumb-list">
             <li class="breadcrumb-list__item">
               <a href="#" class="breadcrumb-list__link"> Home</a>
@@ -136,7 +148,7 @@
             <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
           </ul>
         </div>
-        <div class="hotel-info">
+        <div class="hotel-info" data-aos="fade-right" data-aos-delay="600">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
@@ -158,7 +170,11 @@
           </div>
         </div>
         <div class="hotel-grid">
-          <div class="swiper-container hotel-slider hotel__slider">
+          <div
+            class="swiper-container hotel-slider hotel__slider"
+            data-aos="fade-right"
+            data-aos-delay="700"
+          >
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -207,7 +223,11 @@
             ></button>
           </div>
           <div class="price-and-map">
-            <div class="booking booking__information">
+            <div
+              class="booking booking__information"
+              data-aos="fade-right"
+              data-aos-delay="800"
+            >
               <div class="booking__info">
                 <div class="price">
                   <span class="price__start">price starts as</span>
@@ -243,7 +263,7 @@
                 View Other Options
               </button>
             </div>
-            <div id="map">
+            <div id="map" data-aos="fade-right" data-aos-delay="900">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4546.599815717471!2d-122.42174225794908!3d37.7754354999072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858081cea671ed%3A0xeb283981f3f98a03!2sSquare%20Inc!5e0!3m2!1sru!2sru!4v1606242861701!5m2!1sru!2sru"
                 height="213"
@@ -260,9 +280,22 @@
     </section>
     <section class="other">
       <div class="container">
-        <h2 class="other-title">Other Packages</h2>
+        <h2
+          class="other-title"
+          data-aos="flip-up"
+          data-aos-delay="100"
+          data-aos-duration="700"
+        >
+          Other Packages
+        </h2>
         <div class="other-wrapper">
-          <div class="other-card-main">
+          <div
+            class="other-card-main"
+            data-aos="flip-up"
+            data-aos-delay="100"
+            data-aos-duration="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="other__block-img">
               <picture>
                 <source
@@ -323,7 +356,13 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="card__block">
               <img
                 src="img/other-2.jpg"
@@ -365,7 +404,13 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="card__block">
               <img
                 src="img/other-3.jpg"
@@ -407,7 +452,13 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="flip-up"
+            data-aos-delay="400"
+            data-aos-duration="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="card__block">
               <img
                 src="img/other-4.jpg"
@@ -449,7 +500,13 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div
+            class="card"
+            data-aos="flip-up"
+            data-aos-delay="500"
+            data-aos-duration="700"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="card__block">
               <img
                 src="img/other-5.jpg"
@@ -501,7 +558,7 @@
       data-speed="0.4"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-tittle">
+        <h2 class="newsletter-tittle" data-aos="fade-left" data-aos-delay="200">
           subscribe to our
           <span class="newsletter-tittle__strong">Newsletter</span>
         </h2>
@@ -509,6 +566,8 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
+          data-aos="fade-left"
+          data-aos-delay="300"
         >
           <input
             type="email"
@@ -524,8 +583,14 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
-        <div class="swiper-container reviews-slider">
+        <h2 class="reviews__title" data-aos="flip-right" data-aos-delay="200">
+          What people think about us
+        </h2>
+        <div
+          class="swiper-container reviews-slider"
+          data-aos="flip-right"
+          data-aos-delay="300"
+        >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
@@ -620,9 +685,15 @@
     </section>
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other Activities</h2>
+        <h2 class="activities__title" data-aos="zoom-in" data-aos-delay="100">
+          Other Activities
+        </h2>
         <div class="activities-wrapper">
-          <div class="activities-card activities__card">
+          <div
+            class="activities-card activities__card"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <img
               src="img/activities-1.jpg"
               alt="activities image"
@@ -631,7 +702,11 @@
             <span class="activities__name">The curious corner of chamarel</span>
             <button class="activities__button">Book Now</button>
           </div>
-          <div class="activities-card activities__card">
+          <div
+            class="activities-card activities__card"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
             <img
               src="img/activities-2.jpg"
               alt="activities image"
@@ -640,7 +715,11 @@
             <span class="activities__name">Gymkhana club golf course</span>
             <button class="activities__button">Book Now</button>
           </div>
-          <div class="activities-card activities__card">
+          <div
+            class="activities-card activities__card"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
             <img
               src="img/activities-3.jpg"
               alt="activities image"
@@ -651,7 +730,11 @@
             </span>
             <button class="activities__button">Book Now</button>
           </div>
-          <div class="activities-card activities__card">
+          <div
+            class="activities-card activities__card"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
             <img
               src="img/activities-4.jpg"
               alt="activities image"
@@ -668,10 +751,19 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="index.html" class="footer__logo">
+          <a
+            href="index.html"
+            class="footer__logo"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img src="img/footer-logo.svg" alt="Logo: Best Tour Plan" />
           </a>
-          <div class="footer__list footer__categories">
+          <div
+            class="footer__list footer__categories"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <h3 class="footer__title">All categories</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -700,7 +792,11 @@
               </li>
             </ul>
           </div>
-          <div class="footer__list footer__additional">
+          <div
+            class="footer__list footer__additional"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <h3 class="footer__title">Additional information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -725,7 +821,11 @@
               </li>
             </ul>
           </div>
-          <div class="footer__social-network">
+          <div
+            class="footer__social-network"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <h3 class="footer__title footer__title--inline">Social network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link">
@@ -739,7 +839,11 @@
               </a>
             </div>
           </div>
-          <div class="footer__list footer__legal">
+          <div
+            class="footer__list footer__legal"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <h3 class="footer__title">Legal information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -756,7 +860,11 @@
               </li>
             </ul>
           </div>
-          <div class="footer__contact-details">
+          <div
+            class="footer__contact-details"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <h3 class="footer__title footer__title--margin">Contact Details</h3>
             <p class="footer__subtitle footer__contacts-text">
               Feel free to contact us by phone, email or by our contact form
@@ -823,7 +931,11 @@
               </li>
             </ul>
           </div>
-          <div class="footer__contact-form">
+          <div
+            class="footer__contact-form"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <h3 class="footer__title footer__title--margin">
               Send us a message
             </h3>
@@ -859,7 +971,11 @@
             </form>
           </div>
         </div>
-        <div class="footer-bottom footer__bottom-margin">
+        <div
+          class="footer-bottom footer__bottom-margin"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div class="footer-bottom__wrapper">
             <span class="footer-bottom__text footer-bottom__padding">
               <a href="#" class="footer__link">Disclaimer</a>
@@ -934,6 +1050,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -82,4 +82,5 @@ $(document).ready(function () {
   return this.optional( element ) || /[a-z]+@[a-z]+\.[a-z]+/.test( value );
 }
   $('.input__phone').mask('+7 (000) 000-0000')
+  AOS.init();
 });

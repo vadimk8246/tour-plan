@@ -455,8 +455,9 @@ template {
   position: absolute;
   right: 0px;
   top: 0px;
+  bottom: 0px;
   width: 65px;
-  height: 40px;
+  height: 39px;
   border-radius: 0px 6px 6px 0px;
   border: none;
   background-color: #EC1F46;
@@ -1740,7 +1741,7 @@ template {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 143, 223, 0.39);
+  background-color: rgba(0, 143, 223, 0.4);
   z-index: 1000;
   visibility: hidden;
   opacity: 0;
