@@ -73,7 +73,8 @@ $(document).ready(function () {
       },
       search:{
         required:""
-      }
+      },
+      
     },
   });
   })
